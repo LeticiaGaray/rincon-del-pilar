@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&family=Pacifico&family=Parisienne&family=Sacramento&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&family=Pacifico&family=Parisienne&family=Sacramento&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&family=Lobster&family=Pacifico&family=Parisienne&family=Sacramento&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&family=Lobster&family=Pacifico&family=Parisienne&family=Sacramento&family=Satisfy&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  color: white; }
+
+h2 {
+  color: burlywood; }
+
+body {
+  background: linear-gradient(to right, #e66465, #9198e5); }
+
+.image {
+  height: auto;
+  width: 100px; }
+
+p {
+  color: #ffffff; }
+
+ul li a {
+  color: white; }
+
+.texto-derecha {
+  text-align: right; }
+
+.menu {
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  text-align: right; }
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  display: block;
+  float: right; }
+
+.menu li {
+  display: inline-block;
+  text-align: right; }
+
+.menu li a:hover {
+  background: grey; }
+
+.redes {
+  height: 200px;
+  padding: 30px; }
+  .redes .sociales {
+    margin-top: 80px; }
+
+.sociales {
+  text-align: right;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .sociales li {
+    display: inline-block; }
+  .sociales a {
+    padding: 10px; }
+
+.header {
+  border-bottom: 2px solid white; }
+
+.footer {
+  margin-top: 280px; }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 0px; }
+
+.footer-text {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end; }
+
+.in-flex {
+  flex: 1;
+  min-width: 300px; }
+  .in-flex div {
+    padding: 25px;
+    margin: 20px; }
+
+.in-flex:first-child {
+  flex-wrap: 2;
+  padding: 25px;
+  background: #f3eaea;
+  margin: 20px;
+  margin-bottom: 0px; }
+
+.ubication {
+  text-align: center;
+  border: 2px solid black;
+  width: 700px;
+  margin: auto; }
+
+.container__photos {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 55% 55%;
+  grid-gap: 5%;
+  grid-column-gap: 5%;
+  margin-left: 130px; }
+  .container__photos div img {
+    width: 100%; }
+
+nav ul li {
+  list-style: none; }
+  nav ul li a {
+    text-decoration: none; }
+
+form {
+  width: 25%;
+  margin: auto; }
+  form .input--texto input {
+    width: 100%; }
+  form .input--submit {
+    width: 20%;
+    margin: auto; }
+    form .input--submit input {
+      width: 100%; }
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px; }
+
+#img--presentacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px; }
+
+h2 {
+  text-align: center;
+  font-family: 'Cantarell', sans-serif;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Parisienne', cursive;
+  font-family: 'Sacramento', cursive;
+  font-family: 'Satisfy', cursive; }
+
+h1 {
+  font-family: 'Cantarell', sans-serif;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Parisienne', cursive;
+  font-family: 'Sacramento', cursive;
+  font-family: 'Satisfy', cursive; }
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  border: 3px solid #000;
+  border-style: dotted;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .contenedor .contenedor__collage {
+    width: 23%;
+    display: grid;
+    grid-template-columns: 55% 55%;
+    grid-gap: 5%;
+    grid-column-gap: 5%;
+    margin-left: 130px;
+    position: relative; }
+  .contenedor .contenedor__imagen {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 60px; }
+
+.texto-encima {
+  position: absolute;
+  top: 10px;
+  left: 10px; }
+  .texto-encima h3 {
+    font-family: 'Cantarell', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Parisienne', cursive;
+    font-family: 'Sacramento', cursive;
+    font-family: 'Satisfy', cursive;
+    padding-top: 40px; }
+
+h6 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Cantarell', sans-serif;
+  font-family: 'Lobster', cursive;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Parisienne', cursive;
+  font-family: 'Sacramento', cursive;
+  font-family: 'Satisfy', cursive;
+  padding-top: 40px;
+  font-size: 25px; }
+
+/*media query*/
+@media (min-width: 400.99px) and (max-width: 800.98px) {
+  h1 {
+    color: fuchsia; } }
+
+@media (min-width: 200px) and (max-width: 400.98px) {
+  body {
+    background: linear-gradient(#45ddf1, #9198e5); } }

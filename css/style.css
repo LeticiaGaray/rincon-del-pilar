@@ -10,7 +10,7 @@ h1 {
   color: white; }
 
 h2 {
-  color: burlywood; }
+  color: white; }
 
 body {
   background: linear-gradient(to right, #e66465, #9198e5); }
@@ -213,3 +213,5 @@ h6 {
 @media (min-width: 200px) and (max-width: 400.98px) {
   body {
     background: linear-gradient(#45ddf1, #9198e5); } }
+
+

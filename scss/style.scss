@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 h1{
@@ -35,13 +35,20 @@ ul li a{
 }
 
 
+#menu-general{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
 .menu{
     list-style: none;
     padding: 0;
-    width: 90%;
+    width: 130%;
     max-width: 1000px;
-    margin: auto;
-    text-align: right;
+    margin: 0px;
+    text-align:end;
 } 
 
 .menu li a {
@@ -63,6 +70,9 @@ ul li a{
     background:grey;
 }
 
+.logo--menu{
+    float: left;
+}
 
 .redes{
     height: 200px;
@@ -276,6 +286,30 @@ h6{
     font-family: 'Satisfy', cursive;
     padding-top: 40px;
     font-size: 25px;
+}
+
+.logo--menu{
+    margin-top: 2%;
+    margin-bottom: 15%;
+
+}
+
+/* Animación en texto */
+
+.texto1{
+    width: 250px;
+    height: 200px;
+    background:indianred ;
+    animation-name: mianimacion;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    position: relative;
+}
+
+@keyframes mianimacion {
+    0% {background: black; right: 0px; top:0px;}
+    50% {background: #e66465; right: 0px;: 300px; top: 0px;}
+    100%{background: #e66465; right: 0px; top: 0px;}
 }
 
 /*media query*/

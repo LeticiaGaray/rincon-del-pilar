@@ -38,6 +38,7 @@ ul li a{
 #menu-general{
     display: flex;
     justify-content: space-around;
+
 }
 
 
@@ -45,33 +46,42 @@ ul li a{
 .menu{
     list-style: none;
     padding: 0;
-    width: 130%;
-    max-width: 1000px;
+    width: 100%;
     margin: 0px;
-    text-align:end;
+  
 } 
+
 
 .menu li a {
     text-decoration: none;
     color: white;
     padding: 20px;
     display: block;
-    float: right;
+    text-align: center;
+    font-size:large ;
+   
 }
 
         
 .menu li{
-
-    display: inline-block;
     text-align:right;
+    width: 20%;
 }
         
 .menu li a:hover{
     background:grey;
 }
 
-.logo--menu{
-    float: left;
+.menu-horizontal{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
 }
 
 .redes{
@@ -202,11 +212,34 @@ form{
 
 }
 
-#img--presentacion{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 100px;
+
+
+
+.border{
+    background-color: darksalmon;
+    color: #fff;
+    width: 350px;
+    height: 470px;
+    border-top: 15px solid black;
+    border-left: 15px solid black;
+    border-bottom: 15px solid black;
+    border-right: 15px solid black;
+
+    
+    animation-name: miAnimacion;
+    animation-duration: 4s; 
+}
+
+@keyframes miAnimacion{
+    0%{
+        transform: translateX(-30%);
+        background-color:sandybrown;
+    }
+   
+    100%{
+        transform: translateX(20%);
+        background-color:sandybrown;
+    }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Pacifico&family=Parisienne&family=Sacramento&family=Satisfy&display=swap');
@@ -288,28 +321,9 @@ h6{
     font-size: 25px;
 }
 
-.logo--menu{
+.logo{
     margin-top: 2%;
-    margin-bottom: 15%;
-
-}
-
-/* Animación en texto */
-
-.texto1{
-    width: 250px;
-    height: 200px;
-    background:indianred ;
-    animation-name: mianimacion;
-    animation-duration: 5s;
-    animation-delay: 2s;
-    position: relative;
-}
-
-@keyframes mianimacion {
-    0% {background: black; right: 0px; top:0px;}
-    50% {background: #e66465; right: 0px;: 300px; top: 0px;}
-    100%{background: #e66465; right: 0px; top: 0px;}
+    float: left;
 }
 
 /*media query*/
@@ -320,9 +334,9 @@ h6{
     }
 }
 
+
 @media (min-width: 200px) and (max-width: 400.98px){
     body{
         background: linear-gradient(#45ddf1, #9198e5);
     }
-    
 }

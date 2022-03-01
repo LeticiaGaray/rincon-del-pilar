@@ -20,6 +20,10 @@ body{
     width: 100px;
 }
 
+.header{
+    border-bottom: 2px solid white;
+}
+
 p{
     color:#ffffff;
 }
@@ -58,7 +62,7 @@ ul li a{
     padding: 20px;
     display: block;
     text-align: center;
-    font-size:large ;
+    font-size:large;
    
 }
 
@@ -70,14 +74,10 @@ ul li a{
         
 .menu li a:hover{
     background:grey;
+    width: 112%;;
 }
 
-.menu-horizontal{
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2%;
-}
+
 
 ul{
     display: flex;
@@ -89,28 +89,18 @@ ul{
     padding: 30px;
     .sociales{
         margin-top: 80px;
-
     }
-}
-
-
-
-.sociales{
-    text-align:right;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    li{
-        display: inline-block;
+    .sociales{
+        text-align:right;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        li{
+            display: inline-block;
+        }
+        a{
+            padding: 10px;
+        }
     }
-    a{
-        padding: 10px;
-    }
-}
-
-
-
-.header{
-    border-bottom: 2px solid white;
 }
 
 .footer{
@@ -120,7 +110,8 @@ ul{
 
 
 footer{
-    display: flex; flex-direction: row;
+    display: flex; 
+    flex-direction: row;
     align-items: flex-end;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -210,24 +201,20 @@ form{
     justify-content: space-around;
     margin-top: 100px;
 
-}
-
-
-
-
-.border{
-    background-color: darksalmon;
-    color: #fff;
-    width: 350px;
-    height: 470px;
-    border-top: 15px solid black;
-    border-left: 15px solid black;
-    border-bottom: 15px solid black;
-    border-right: 15px solid black;
-
+    .border{
+        background-color: darksalmon;
+        color: #fff;
+        width: 350px;
+        height: 470px;
+        border-top: 15px solid black;
+        border-left: 15px solid black;
+        border-bottom: 15px solid black;
+        border-right: 15px solid black;
     
-    animation-name: miAnimacion;
-    animation-duration: 4s; 
+        
+        animation-name: miAnimacion;
+        animation-duration: 4s; 
+    }
 }
 
 @keyframes miAnimacion{
@@ -280,6 +267,14 @@ h1{
         position: relative;
 
     }
+
+    .imgContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+        
     .contenedor__imagen{
         position: relative;
         display: inline-block;
@@ -326,17 +321,36 @@ h6{
     float: left;
 }
 
+
+.imgContainer__img--principal{
+    width: 400px; 
+    height: 500px;
+}
+
 /*media query*/
 
-@media (min-width: 400.99px) and (max-width: 800.98px){
-    h1{
-        color:fuchsia;
+@media only screen and (max-width: 576px){
+    ul{
+        display: inline-block;
+    }
+    .menu li a {
+        float: none;
+        width: 100%;
+    }
+    .border{
+        width: 120px;
+        height: 850px;
+        flex-direction: column;
+        background-color: darksalmon;
+        color: #fff;
+    }
+
+    .imgContainer__img--principal{
+        display: flex;
+        width: 150px; 
+        height: 150px;
     }
 }
 
-
-@media (min-width: 200px) and (max-width: 400.98px){
-    body{
-        background: linear-gradient(#45ddf1, #9198e5);
-    }
+@media (max-width: 1200px) {
 }
